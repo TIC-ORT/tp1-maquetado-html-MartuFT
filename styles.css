@@ -1,153 +1,155 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-    body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
-    sans-serif;
-    color: black;
-    }
-    .cuadrado {
-    
-    background-color:rgba(255, 166, 0, 0.466);
-    max-width: 100%;
-    height: 37vh;
-    }
-    .cuadradoprin {
-    background-color:orange;
-    width: 37vh;
-    height: 37vh;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+
+  .partedearriba {
     display: flex;
-    margin-top: 5;
-    }
-    .cuadrado1 {
-    background-color:blue;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .cuadrado2 {
-    background-color:red;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .cuadrado3 {
+    align-items: flex-start;
+    background-color: rgb(255, 218, 158);
+    padding: 30px 40px;
+    min-height: 160px;
+  }
+  
+  .cuadradoprin {
+    width: 140px;
+    height: 140px;
+    background-color: rgb(255, 204, 102);
+    margin-right: 40px;
+  }
+  
+.lineas {
+    flex-grow: 1;
+    margin-top: 5px;
+  }
+  
+  .linea {
+    height: 10px;
+    margin-bottom: 10px;
+    border-radius: 0;
+  }
+  
+  .grande {
     background-color: orange;
-    width: 37vh;
-    height: 37vh;
+    width: 40%;
+    height: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .espacio {
+    height: 20px;
+  }
+  
+  .blanca {
+    background-color: white;
+    width: 80%;
+    height: 10px;
+  }
+  
+  .blanca.ultima {
+    width: 50%;
+    height: 8px;
+  }
+  
+
+  .muchoscuadraditos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    justify-items: center;
+  }
+  
+  .bloque {
+    width: 140px;
+    height: 140px;
+    position: relative;
+  }
+  
+  .cuadrado {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .rectangulo {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+  }
+  
+  .cuadradobebe {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  .azul .cuadrado {
+    background-color: lightblue;
+  }
+  .rojo .cuadrado {
+    background-color: lightcoral;
+  }
+  .amarillo .cuadrado {
+    background-color: rgb(255, 204, 102);
+  }
+  
+  .azul .cuadradobebe,
+  .azul .rectangulo {
+    background-color: rgb(0, 102, 204);
+  }
+  
+  .rojo .cuadradobebe,
+  .rojo .rectangulo {
+    background-color: rgb(180, 0, 0);
+  }
+  
+  .amarillo .cuadradobebe,
+  .amarillo .rectangulo {
+    background-color: rgb(204, 153, 0);
+  }
+  
+
+  .partedeabajo {
+    background-color: rgb(230, 230, 230);
     display: flex;
-    margin-top: 5;
-    }
-    .cuadrado4 {
-    
-    background-color:orange;
-    width: 37vh;
-    height: 37vh;
+    justify-content: space-around;
+    padding: 25px 40px;
+    gap: 20px;
+  }
+  
+  .columna {
+    width: 25%;
     display: flex;
-    margin-top: 5;
-    }
-    .cuadrado5 {
-    background-color:blue;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .cuadrado6 {
-    background-color:red;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .cuadradochico1 {
-    background-color:blue;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .cuadradochico2 {
-    background-color:red;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .cuadradochico3 {
-    
-    background-color: orange;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .cuadradochico4 {
-    background-color:orange;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .cuadradochico5 {
-    background-color:blue;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .cuadradochico6 {
-    background-color:red;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .recchico1 {
-    background-color:blue;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    
-    .recchico2 {
-    background-color:red;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .recchico3 {
-    background-color: orange;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .recchico4 {
-    background-color:orange;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .recchico5 {
-    background-color:blue;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    margin-top: 5;
-    }
-    .recchico6 {
-    background-color:red;
-    width: 37vh;
-    height: 37vh;
-    display: flex;
-    
-    margin-top: 5;
-    }
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .gris {
+    background-color: #bbb;
+    width: 80%;
+    height: 12px;
+  }
+  
+  .blanca:not(.ultima) {
+    width: 80%;
+    height: 10px;
+  }
+  
+  .ultima {
+    background-color: white;
+  }
