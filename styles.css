@@ -9,8 +9,8 @@
     background-color: white;
   }
   
-
-  .titulito {
+  /* Parte de arriba (encabezado) */
+  .partedearriba {
     display: flex;
     align-items: flex-start;
     background-color: rgb(255, 218, 158);
@@ -25,14 +25,16 @@
     margin-right: 40px;
   }
   
-.lineas {
+  .lineas {
     flex-grow: 1;
-    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
   }
   
   .linea {
     height: 10px;
-    margin-bottom: 10px;
     border-radius: 0;
   }
   
@@ -40,11 +42,6 @@
     background-color: orange;
     width: 40%;
     height: 14px;
-    margin-bottom: 30px;
-  }
-  
-  .espacio {
-    height: 20px;
   }
   
   .blanca {
@@ -58,7 +55,7 @@
     height: 8px;
   }
   
-
+  /* Parte de los bloques */
   .muchoscuadraditos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -97,33 +94,33 @@
     transform: translate(-50%, -50%);
   }
   
-
+  /* Colores */
   .azul .cuadrado {
     background-color: lightblue;
   }
   .rojo .cuadrado {
     background-color: lightcoral;
   }
-  .amarillo .cuadrado {
+  .naranja .cuadrado {
     background-color: rgb(255, 204, 102);
   }
   
   .azul .cuadradobebe,
   .azul .rectangulo {
-    background-color: rgb(0, 102, 204);
+    background-color: rgb(121, 205, 233)
   }
   
   .rojo .cuadradobebe,
   .rojo .rectangulo {
-    background-color: rgb(180, 0, 0);
+    background-color: rgb(243, 106, 106)
   }
   
-  .amarillo .cuadradobebe,
-  .amarillo .rectangulo {
-    background-color: rgb(204, 153, 0);
+  .naranja .cuadradobebe,
+  .naranja .rectangulo {
+    background-color: rgb(252, 187, 58);
   }
   
-
+  /* Pie de página */
   .partedeabajo {
     background-color: rgb(230, 230, 230);
     display: flex;
